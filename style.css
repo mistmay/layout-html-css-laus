@@ -1,0 +1,248 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    color: rgba(169, 169, 169, 255);
+}
+
+p {
+    font-style: italic;
+}
+
+a {
+    text-decoration: none;
+    color: rgba(244, 145, 92, 255);
+}
+
+header,
+footer {
+    background-color: rgba(51, 51, 51, 255);
+}
+
+header {
+    height: 70px;
+}
+
+footer {
+    height: 60px;
+}
+
+.width-100 {
+    width: 100%;
+}
+
+nav {
+    width: 70%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+    display: -webkit-flex;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+.flex-col {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    align-items: flex-start;
+    -webkit-align-items: flex-start;
+}
+
+#nav-right {
+    background-color: rgba(35, 35, 35, 255);
+    margin: 10px 0;
+    padding: 15px;
+    gap: 25px;
+}
+
+#nav-right a {
+    color: rgba(98, 95, 83, 255);
+}
+
+.flex-col-center {
+    display: flex;
+    display: -webkit-flex;
+    flex-direction: column;
+    -webkit-flex-direction: column;
+    justify-content: center;
+    -webkit-justify-content: center;
+    align-items: center;
+    -webkit-align-items: center;
+}
+
+main {
+    margin: 30px auto;
+    width: 70%;
+    justify-content: space-between;
+    -webkit-justify-content: space-between;
+    gap: 60px;
+}
+
+#hero {
+    gap: 2%;
+    height: 300px;
+}
+
+#hero-left {
+    width: 28%;
+    height: 100%;
+    background-color: rgba(222, 222, 222, 255);
+    padding: 30px 15px;
+    gap: 12%;
+}
+
+#hero-left h1 {
+    font-size: 35px;
+}
+
+#hero-right {
+    width: 70%;
+    height: 100%;
+}
+
+.image {
+    width: 100%;
+    height: 100%;
+}
+
+.read {
+    align-self: flex-end;
+    -webkit-align-self: flex-end;
+    font-weight: bold;
+}
+
+#article-container {
+    gap: 5%;
+}
+
+article {
+    width: 30%;
+    gap: 15px;
+}
+
+.article-image {
+    float: left;
+    border: 1px solid rgba(169, 169, 169, 255);
+    padding: 4px;
+    margin-right: 10px;
+    margin-bottom: 5px;
+    width: 90px;
+    height: 90px;
+}
+
+#card-container {
+    gap: 4%;
+}
+
+.card {
+    width: 22%;
+    gap: 10px;
+}
+
+.card h2 {
+    font-size: 20px;
+}
+
+.card-image {
+    height: 110px;
+    border: 1px solid rgba(169, 169, 169, 255);
+    padding: 4px;
+}
+
+footer>div {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media (max-width: 1218px) {
+
+    footer>div,
+    main,
+    nav {
+        width: 100%;
+        padding: 0 3%;
+    }
+
+    footer>div,
+    nav {
+        margin: 0;
+    }
+
+    main {
+        margin: 30px 0;
+    }
+}
+
+@media (max-width: 907px) {
+    section {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+        gap: 20px !important;
+    }
+
+    #hero {
+        height: auto;
+    }
+
+    section>div,
+    section>article {
+        width: 100% !important;
+        height: auto !important;
+    }
+
+    #hero-left h1 {
+        align-self: center;
+        -webkit-align-self: center;
+    }
+
+    #hero-right img {
+        width: 100%;
+        height: 300px;
+    }
+
+    .card-image {
+        width: 225px;
+        align-self: center;
+        -webkit-align-self: center;
+    }
+
+    .card {
+        text-align: center;
+        width: 50vw !important;
+    }
+}
+
+@media (max-width: 599px) {
+    #nav-right {
+        display: none;
+    }
+
+    nav {
+        justify-content: center !important;
+        -webkit-justify-content: center !important;
+    }
+
+    .card {
+        width: 90% !important;
+    }
+
+    footer>div {
+        flex-direction: column;
+        -webkit-flex-direction: column;
+    }
+
+    footer p {
+        font-size: 12px;
+    }
+}
